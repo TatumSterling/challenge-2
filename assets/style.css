@@ -68,18 +68,34 @@ a:hover {
 
 .about-me-p {
     height: 200px;
-    width: 75%;
-    border: solid black;
+    width: 90%;
+    margin: 5px;
 }
 
+.larger-image {
+    width: 90%;
+    height: auto;
+    background-image: url("../assets/images/project1.jpg");
+
+}
+/* need to fix headers inside cards to be on the bottom left
+need to figure out how to make cards blue tint before and 
+clear while hovering*/
 .card-holder {
     display:inline-flex;
     padding: 10px;
     text-align: center;
+    flex-wrap: wrap;
     
 }
-
+/* need to fix headers inside cards to be on the bottom left*/
 .card {
-    margin: 5px;
+    margin: 10px;
     border: solid black;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    width: 45%;
+    justify-content: space-evenly;
 }
+
+/* need to add media query for screen width*/
