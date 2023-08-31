@@ -1,22 +1,31 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
 
 .header {
     border: none;
-    background-color: #454552 ;
+    background-color: #2e3045;
     padding: 15px;
 }
 
 h1 {
     display: inline;
-    color: #2e3045; 
-    background-color: #95c7bf;
+    color: #2e3045;
+    background-color: #c697f0;
     padding: 10px;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header img {
+    padding-top: 10px;
+    position: relative;
+    top: 15px;
 }
 
 .header nav {
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     position: absolute;
     top: 0;
@@ -33,10 +42,10 @@ h1 {
 }
 
 a {
-    color: #95c7bf;
+    color: #c697f0;
 }
 
-a:hover {
+ul li a:hover {
     color: white;
 }
 
@@ -51,51 +60,132 @@ a:hover {
 
 .hero h2 {
     display: inline;
-    color: #2e3045; 
-    background-color: #95c7bf;
+    color: #c697f0;
+    background-color: #2e3045;
     padding: 5px;
     position: absolute;
     right: 10px;
     top: 200px;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
+
 .main-column {
     width: 75%;
     float: right;
     padding-left: 30px;
-    border-left: solid #2e3045;
+    border-left: solid hsl(235, 20%, 23%);
+    margin-left: 20px;
 }
 
 .about-me-p {
     height: 200px;
     width: 90%;
-    margin: 5px;
+    margin: 20px;
 }
 
-.larger-image {
+.larger-image-container {
     width: 90%;
-    height: auto;
+    height: 300px;
     background-image: url("../assets/images/project1.jpg");
-
+    overflow: hidden;
+    position: relative;
+    margin-left: 5px;
 }
-/* need to fix headers inside cards to be on the bottom left
-need to figure out how to make cards blue tint before and 
-clear while hovering*/
-.card-holder {
-    display:inline-flex;
+
+.large-project-header {
     padding: 10px;
+    background-color: #2e3045;
+    color: #c697f0;
+    display: inline;
+    position: absolute;
+    left: 0px;
+    font-size: large;
+}
+
+
+.card-holder {
+    display: flex;
+    padding-top: 30px;
     text-align: center;
     flex-wrap: wrap;
-    
+
 }
-/* need to fix headers inside cards to be on the bottom left*/
+
 .card {
     margin: 10px;
-    border: solid black;
     box-sizing: border-box;
     flex-wrap: wrap;
     width: 45%;
     justify-content: space-evenly;
+    height: 150px;
+    margin: 5px;
+}
+
+.card img {
+    height: 148px;
+    overflow: hidden;
+    width: 100%;
+    z-index: -1;
+}
+
+.card header {
+    padding: 5px;
+    color: #c697f0;
+    background-color: #2e3045;
+    display: inline;
+    position: absolute;
+}
+
+aside {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    background-color: #2e3045;
+    color: #c697f0;
+    padding-right: 10px;
+    height: 100%;
+}
+
+#work {
+    padding-top: 300px;
+    padding-bottom: 450px;
+}
+
+#contact-me {
+    display: flex;
+    margin-right: 200px;
+    float: left;
+    position: relative;
+    left: 120px;
+}
+
+footer {
+    background-color: #c697f0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+footer h3 {
+    display: inline;
+    margin-left: 10px;
+    color: #2e3045;
+}
+
+#email {
+    padding-right: 100px;
 }
 
 /* need to add media query for screen width*/
+@media screen and (max-width: 992px) {
+    .card {
+        width: 45%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}
