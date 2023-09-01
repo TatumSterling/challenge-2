@@ -9,6 +9,10 @@ N/A
 ## Usage
 To deploy this webpage, click on the link at the top of the README file and it will take you to my portfolio. From there you can use the navigation bar to shortcut to different sections where you can read about me or see my work! My contact information is also at the bottom of the page.
 
+below are screenshots of the webpage
+![alt text](assets/images/portfolio.1.png)
+![alt text](assets/images/portfolio.2.png)
+
 ## Credits
 N/A
 
